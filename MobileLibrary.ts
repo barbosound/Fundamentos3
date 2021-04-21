@@ -43,11 +43,21 @@ export class MobileLibrary
         this.mobiles[index] = value;
     }
 
-    public totalPriceCalculation():number{
+    public getTotalPrice():number
+    {
+        return this.totalPrice;
+    }
+
+    public setTotalPrice(price:number)
+    {
+        this.totalPrice = price;
+    }
+
+    private totalPriceCalculation():number{
         var total: number = 0;
         for (let i = 0; i < this.mobiles.length; i++) {
             total += this.mobiles[i].getPrice();          
         }
-        return total;
+        return this.getTotalPrice();
     }
 }
