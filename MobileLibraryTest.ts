@@ -12,4 +12,6 @@ array = [
 
 var library = new MobileLibrary("NokiaLibrary","Japan",array);
 
-console.log(library.totalPriceCalculation());
+// console.log(library.totalPriceCalculation());
+
+library.printLibrary();
